@@ -1,0 +1,51 @@
+.table{
+    margin-top: 100px;
+    margin-left: 95px;
+    margin-right: 95px;
+    .container{
+        width: 1109px;
+        table{
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            tr{
+                td,th{
+                    padding:23px 50px;
+                }
+            }
+        }
+    }
+}
+
+@mixin tableSyles($bg-color, $font, $text-color, $f-size, $f-weight:400){
+    color: $text-color;
+    font-family: $font;
+    font-size: $f-size;
+    font-weight: $f-weight;
+    background-color: $bg-color;
+}
+
+.time-col,
+.descript-col{
+    @include tableSyles($color3, $Roboto-Black, $white-color, 30px, 800);
+}
+
+.darken_item{
+    @include tableSyles($table-color1, $Roboto-Black, $white-color, 22px);
+}
+.lighter_item{
+    @include tableSyles($table-color2, $Roboto-Black, $white-color, 22px);
+}
+.none-col{
+    @include tableSyles($color3, $Roboto-Black, $white-color, 30px);
+}
+
+.undertable-text{
+    color: $title-color;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 165px;
+}

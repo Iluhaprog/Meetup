@@ -1,0 +1,29 @@
+.details{
+    margin-top: 155px;
+
+    .container{
+        display: flex;
+        justify-content: center;
+
+        .details__item{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: 35px;
+            margin-left: 35px
+        }
+
+    }
+}
+
+.details__title{
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.details__description{
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+}

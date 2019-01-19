@@ -1,0 +1,20 @@
+.header{
+
+    background-color: $header-background;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.header:after{
+    position: absolute;
+    content: '';
+    top: 85%;
+    width: 100%;
+    height: 140px;
+    background: $white-color;
+    -webkit-clip-path: polygon(0 75%, 100% 1%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 75%, 100% 1%, 100% 100%, 0% 100%);
+    z-index: 997;
+}

@@ -1,0 +1,29 @@
+.short-description{
+    padding-top: 5px;
+    position: relative;
+    height: 358px;
+
+    .container{
+        padding-left: 95px;
+        padding-right: 95px;
+        width: 1161px;
+    }
+}
+
+.title{
+    color: $title-color;
+    font-family: $Roboto-Black;
+    font-size: 50px;
+}
+
+.short-description__text{
+    color: $title-color;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    float: left;
+    span{
+        font-family: "Roboto Medium";
+        font-weight: 600;
+    }
+}
