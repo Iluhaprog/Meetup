@@ -1,0 +1,39 @@
+.about-inner{
+    display: flex;
+    img{
+        position: absolute;
+        top: -80px;
+        z-index: 9999;
+    }
+}
+
+.about-title{
+    color: $white-color;
+    font-family: $Roboto-Black;
+    font-size: 50px;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.about-text{
+    color: $white-color;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.about-button{
+    float: right;
+    width: 200px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: $color2;
+    color: $white-color;
+    font-family: $Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
