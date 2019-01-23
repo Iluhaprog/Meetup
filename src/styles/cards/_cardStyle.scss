@@ -1,0 +1,65 @@
+@mixin  frontBack( $rotate, $width, $height) {
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-color: $color2;
+    border-radius: 15px;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    transform: rotateY($rotate);
+}
+
+.cards__card-flip{
+    width: 296px;
+    height: 296px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    perspective: 500px;
+}
+
+.front{
+    @include frontBack(0, 296px, 296px);
+}
+.back{
+    @include frontBack(-180deg, 236px, 236px);
+    padding: 30px;
+}
+
+.cards__card-flip:hover .front{
+    transform: rotateY(180deg);
+}
+.cards__card-flip:hover .back{
+    transform: rotateY(0deg);
+}
+
+.card__title{
+    color: $card-title-color;
+    font-family: $Roboto-Black;
+    font-size: 45px;
+    margin: 0;
+    line-height: 43px;
+}
+
+.card__line{
+    height: 6px;
+    width: 83px;
+    background-color: $white-color;
+    border: none;
+    margin-left: 0;
+}
+
+.card__descript{
+    margin-top: 15px;
+    color: $card-title-color;
+    font-family: $Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.card_img-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

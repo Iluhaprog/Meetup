@@ -1,0 +1,31 @@
+.cards{
+    padding-top: 147px;
+    padding-bottom: 180px;
+    background-color: $white-color;
+    .title{
+        float: none;
+    }
+    .short-description__text{
+        float: none;    
+    }
+    .container{
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 999px;
+    }
+}
+
+.cards__inner{
+    padding-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards__row{
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+@import "cardStyle";

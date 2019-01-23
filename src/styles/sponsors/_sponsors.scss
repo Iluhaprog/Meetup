@@ -1,0 +1,40 @@
+.sponsors-container{
+    padding-top: 156px !important; 
+}
+
+.sponsors-inner{
+    display: block;
+    img{
+        position: static;
+    }
+}
+
+.sponsors-title,
+.sponsors-text{
+    text-align: center;
+}
+
+.sponsors-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 53px;
+    img:nth-child(2){
+        margin: 0 85px;
+    }
+}
+
+.sponsors-button{
+    float: none;
+    margin-top: 66px;
+    margin-left: calc(50% - 85px);
+}
+
+.mountains-img{
+    position: relative; 
+    img:nth-child(2){
+        top: 54px;
+        left: 18.4px;
+        position: absolute;
+    }
+}
