@@ -1,0 +1,73 @@
+.past-events{
+    padding-top: 115px;
+    h2, p{
+        padding-left: 100px;
+    }
+    p{ float: none; }
+}
+
+@mixin photoStyle($color, $width, $height) {
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+
+.photos{
+    margin-top: 100px;
+    .row:nth-child(1){
+        width: 100%;
+        .photo:nth-child(1){
+            @include photoStyle($photo-color1, 60%, 416px);
+        }
+        .photo:nth-child(2){
+            @include photoStyle($color2, 40%, 416px);
+        }
+    }
+
+    .row:nth-child(2){
+        width: 100%;
+        .photo:nth-child(1){
+            @include photoStyle($photo-color3, 42.7%, 368px);
+        }
+        .photo:nth-child(2){
+            @include photoStyle($photo-color4, 57.2%, 368px);
+        }
+
+    }
+}
+
+.row{
+    display: flex;
+}
+
+.photo{
+    overflow: hidden;
+    text-align: center;
+    img{
+        opacity: 0;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &:hover{
+        img{
+            opacity: 1;
+        }
+    }
+}
+
+
+.button-black{
+    margin-top: 98px;
+    margin-bottom: 98px;
+    margin-left: calc(50% - 62px);
+    width: 200px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: $btn-black-color;
+    color: $white-color;
+    font-family: $Roboto;
+    font-size: 22px;
+    font-weight: 400;
+}

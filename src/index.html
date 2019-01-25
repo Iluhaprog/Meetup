@@ -7,9 +7,12 @@
     <title>Meetup</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        html{scroll-behavior: smooth}
+    </style>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             //= tamplate/navigation.html
             //= tamplate/countDownClock.html
@@ -54,6 +57,93 @@
 
     //= tamplate/aboutBlock.html
 
+    <div class="past-events" id="events">
+        <div class="container">
+            
+            <h2 class="title">Past Events</h2>
+            <p class="short-description__text">
+                Check out the photos of our previous events where we rocked with a lot of Famous and <br>
+                enthusiatic authors! We’re always planning to make our future events feel fresh and fun to be at. :)
+            </p>
+
+            <div class="photos">
+                <div class="row">
+                    <div class="photo"><img src="img/pastEvents/event.jpg" alt="event"></div>
+                    <div class="photo"><img src="img/pastEvents/event.jpg" alt="event"></div>
+                </div>
+                <div class="row">
+                    <div class="photo"><img src="img/pastEvents/event.jpg" alt="event"></div>
+                    <div class="photo"><img src="img/pastEvents/event.jpg" alt="event"></div>
+                </div>
+            </div>
+
+            <button class="button-black">View More</button>
+
+        </div>
+    </div>
+
+    <div class="map-and-contact-us" id="contact">
+        <div id="map" class="map"></div>
+        <div class="blackout-map" id="blMap">
+            <div class="contactUs">
+                <div class="showMap">
+                    <img src="img/cuntacUs/showMap.png" alt="showMap.png">
+                    <p>
+                        Lorem Ipsum Avenue, 420/2 elm<br>
+                        street, Melbourne, Sydney - 2122,<br>
+                        Kingdom of Australia
+                    </p>
+                    <button class="about-button map-button" onclick="showMap();">View Map</button>
+                </div>
+                <div class="contactForm">
+                    <form action="#" type="post">
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <textarea name="text" placeholder="Type your message"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="soc-icons">
+            <a href="#"><img src="img/footer/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="img/footer/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="img/footer/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img src="img/footer/googlePlus.png" alt="googlePlus">
+            <a href="#"><img src="img/footer/tumblr.png" alt="tumblr"></a>
+        </div>
+        <p class="footer-text">
+            Hope we see you at the event!<br>
+            All Rights Reserved. Envato Bangladesh © 2015
+        </p>
+
+        <a href="#header" class="go-up-button"><img src="img/footer/goUpButton.png" alt="goUp"></a>    
+    </footer>
+
+    <script>
+    
+        var map;
+        var marker;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 23.41, lng: 90.22},
+                zoom: 15,
+                scrollwheel: false,
+                disableDefaultUI: true
+            });
+            marker = new google.maps.Marker({
+                position: {lat: 23.41, lng: 90.22},
+                map: map,
+                title: "a mitap is held here"
+            });
+        } 
+    
+    </script>
+
     <script defer src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-HKw29e5JZM4UNEuVR5aRHnGTn0JnqLk&callback=initMap"
+    async defer></script>
 </body>
 </html>

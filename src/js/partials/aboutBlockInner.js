@@ -12,7 +12,7 @@ var innerBlock1 = '<div class="about-inner"><img src="img/aboutBlocks/rewards/el
                   'That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>' +
                   '<button class="about-button">Bring on the swag!</button></div><div>';
 
-var innerBlock2 = '<div class="about-inner sponsors-inner"><h2 class="about-title sponsors-title">Sponsor Our Event!</h2>' +
+var innerBlock2 = '<div class="about-inner sponsors-inner" id="sponsors"><h2 class="about-title sponsors-title">Sponsor Our Event!</h2>' +
                   '<p class="about-text sponsors-text">If you want to help us making this event lively and successful,' +
                   'help us by sponsoring our event!<br>This will help us bring in more people, have better livestreaming' +
                   'equipment, maybe even our own chef!<br>You can also sponsor us by giving away free swag at the event!<br><br>' +

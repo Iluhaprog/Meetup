@@ -1,0 +1,27 @@
+.footer{
+    position: relative;
+    background-color: $color2;
+    padding-top: 62px;
+    padding-bottom: 50px;
+    a{
+        color: transparent;
+    }
+}
+
+.soc-icons{
+    text-align: center;
+}
+
+.footer-text{
+    color: $white-color;
+    font-family: $Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.go-up-button{
+    position: absolute;
+    top: 100px;
+    right: 165px;
+}

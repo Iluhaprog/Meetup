@@ -1,1 +1,1 @@
-I use in this project sass, gulp, npm, html, css, js
+I use in this project sass, gulp, npm, html, js

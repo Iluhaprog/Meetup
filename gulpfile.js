@@ -26,6 +26,7 @@ gulp.task('html', function(){
 
 gulp.task('move-img', function(){
     gulp.src('./src/img/**/*.*')
+    .pipe(imagemin())
     .pipe(gulp.dest('build/img'));
 });
 
